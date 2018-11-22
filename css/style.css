@@ -1,0 +1,770 @@
+/*style for all pages*/
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    text-decoration: none;
+    outline: none;
+    font-size: 100%;
+    color: rgba(256, 256, 256, 0.9);
+}
+
+a {
+    color: rgba(256, 256, 256, 0.9);
+    cursor: pointer;
+}
+
+a img {
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(256, 256, 256, 1.0);
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*ie8 */
+}
+
+/*header*/
+#nav-main {
+    background: forestgreen;
+}
+
+#logo-main {
+    margin: -10px 0 0 -24px;
+}
+
+#logo-main .navbar-brand img {
+    cursor: pointer;
+}
+
+#btn-navbar {
+    border: 2px solid rgba(256,256,256, 0.9);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width: 546px) {
+    #navbarSupportedContent {
+        margin-top: 0 !important;
+    }
+}
+
+#nav-main .nav-link {
+    font-size: 120%;
+}
+
+#header-center {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#header-center .navbar-nav {
+    width: 40%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+    #header-center .navbar-nav {
+        width: 100%;
+        margin-left: 0;
+    }
+    #nav-main .nav-link {
+        margin: 0;
+    }
+    #logo-main {
+        margin: -10px 0 -10px 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+    #header-center .navbar-nav {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1480px) {
+    #header-center .navbar-nav {
+        width: 46%;
+        margin: auto;
+    }
+}
+
+#nav-main .btn-success {
+    width: 130px;
+}
+
+#nav-main .btn-success:hover {
+    border-color: aqua;
+}
+
+#nav-main form {
+    display: block;
+    float: right;
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    #nav-main form {
+        display: block;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #nav-main form {
+        margin-top: -20px;
+    }
+}
+
+/*footer*/
+footer {
+    background: forestgreen;
+    color: rgba(256,256,256, 0.9);
+}
+
+footer .footer-adv-img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-social-links {
+    text-align: right;
+}
+
+.footer-social-links a {
+    display: inline-block;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.footer-email {
+    text-align: right;
+}
+
+/*footer - modal windows*/
+footer .modal-js-advertizing img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .modal-js-content {
+    display: none;
+}
+
+footer #modal-js-id {
+    display: none;
+    position: fixed;
+    z-index: 1030;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-js-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-js-close:hover {
+    color: #901010;
+    transition: color 0.8s;
+}
+
+.modal-js-content-img {
+    margin: auto;
+    display: block;
+    height: 80%;
+    width: auto;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 546px) {
+    .modal-js-content-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#modal-js-content {
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#modal-js-content div span {
+    width: 100px;
+    float: right;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    #modal-js-content {
+        width: 80%;
+    }
+}
+
+/*center part of site*/
+#main-content-part {
+    background-color: #1e982a;
+    position: relative;
+}
+
+/*menu-main*/
+#menu-main {
+    background: #869872;
+}
+
+@media only screen and (max-width: 767.98px) {
+    #menu-main {
+        left: -255px;
+        position: absolute;
+        z-index: 1029;
+        width: 240px;
+        background: #869872;
+    }
+    .icon-menu {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .icon-close-menu {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+}
+
+#menu-main ul {
+    list-style: none;
+}
+
+#menu-main li {
+    padding: 5px 10px;
+}
+
+#menu-main .menu-section {
+    background: rgba(0, 0, 0, 0.8);
+    color: #901010;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.icon-close-menu {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon-close-menu:hover {
+    color: #901010;
+    transition: color 0.8s;
+}
+
+.icon-menu {
+    position: absolute;
+    z-index: 1028;
+    top: -20px;
+    right: -120px;
+    display: inline-block;
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .icon-close-menu {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+}
+
+/*advertizing cards*/
+#main-content-part .card {
+    max-width: 300px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 575.98px) {
+    #main-content-part .card {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #main-content-part .card {
+        max-width: 350px;
+    }
+    .card-img-top {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 1252px) and (max-width: 1599.98px) {
+    .card-img-top {
+        max-height: 220px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1251.98px) {
+    .card-img-top {
+        max-height: 220px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 659.98px) {
+    .card-img-top {
+        max-height: 190px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) {
+    .card-img-top {
+        max-height: 220px;
+        object-fit: cover;
+    }
+}
+
+#main-content-part .card-body {
+    /*color: rgba(256, 256, 256, 0.9) ;*/
+}
+
+#main-content-part .card-body p {
+    color: rgba(256, 256, 256, 0.9) ;
+}
+
+/*info-articles*/
+.info-articles {
+    width: 90%;
+    margin: auto;
+    background-color: forestgreen;
+}
+
+@media only screen and (max-width: 767.98px)  {
+    .info-articles {
+        margin-top: 15px;
+    }
+}
+
+.info-articles img {
+    width: 30%;
+}
+
+.info-articles h4 {
+    color: rgba(256, 256, 256, 1.0);
+    text-indent: 0.5em;
+}
+
+@media only screen and (max-width: 991.98px)  {
+    .info-articles img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15px;
+    }
+    .info-articles h4 {
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px)  {
+    .info-articles img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15px;
+    }
+    .info-articles h4 {
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+}
+
+.info-articles p {
+    text-indent: 1.0em;
+}
+
+.info-articles > a {
+    font-weight: bold;
+}
+
+.info-articles > a:hover {
+    text-decoration: none;
+    color: #285298;
+    transition: none;
+}
+
+/*football-news  */
+.football-news {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.98px)  {
+    .football-news {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .football-news {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1199.98px) {
+    .football-news img {
+        margin-bottom: 15px;
+    }
+}
+
+.football-news a {
+    cursor: pointer;
+}
+
+.football-news img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    float: left;
+}
+
+.football-news p {
+    margin: 0;
+}
+
+.football-news span {
+    color: silver;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.football-news hr {
+    border: 1px solid rgba(256, 256, 256, 0.5);
+    margin-top: 10px;
+    clear: both;
+}
+
+/*page article*/
+.football-article {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: forestgreen;
+}
+
+@media only screen and (max-width: 767.98px)  {
+    .football-article {
+        margin-top: 15px;
+    }
+}
+
+.football-article img {
+    width: 30%;
+}
+
+.football-article h4 {
+    color: rgba(256, 256, 256, 1.0);
+    text-indent: 0.5em;
+}
+
+@media only screen and (max-width: 991.98px)  {
+    .football-article img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15px;
+    }
+    .football-article h4 {
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px)  {
+    .football-article img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15px;
+    }
+    .football-article h4 {
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+}
+
+.football-article p {
+    text-indent: 1.0em;
+}
+
+.football-article span {
+    color: silver;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.football-article a {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.football-article a:hover {
+    text-decoration: none;
+    color: #285298;
+    transition: none;
+}
+
+.football-article .left-link {
+    margin-left: 15px;
+}
+
+.football-article .right-link {
+    float: right;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1549.98px)  {
+    .football-article a {
+        display: block;
+    }
+
+    .football-article div {
+        margin-bottom: 30px;
+    }
+
+    .football-article .left-link {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .football-article .right-link {
+        margin-left: 0px;
+        margin-top: 10px;
+        float: left;
+    }
+}
+
+/*page news*/
+.football-item {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.football-item img {
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.football-item p {
+    text-indent: 1.0em;
+    font-size: 120%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.football-item span {
+    color: silver;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.football-item a {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.football-item a:hover {
+    text-decoration: none;
+    color: #285298;
+    transition: none;
+}
+
+.football-item .left-link {
+    margin-left: 15px;
+}
+
+.football-item .right-link {
+    float: right;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1599.98px)  {
+    .football-item {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 1399.98px)  {
+    .football-item a {
+        display: block;
+    }
+
+    .football-item .left-link {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .football-item .right-link {
+        margin-left: 0px;
+        margin-top: 10px;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 575.98px)  {
+    .football-item img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*page contacts*/
+.contacts-info h5 {
+    color: rgba(256, 256, 256, 0.9);
+}
+
+.contacts-info #send:hover {
+    border-color: aqua;
+}
+
+.contacts-info .success-feedback {
+    color: aqua;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.contacts-info .error-feedback {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+/*page authorization*/
+.authorization-form h5 {
+    color: rgba(256, 256, 256, 0.9);
+}
+
+.authorization-form #send:hover {
+    border-color: aqua;
+}
+
+.authorization-form .success-form {
+    color: aqua;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.authorization-form .error-form {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+/*admin page*/
+.admin-form span {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.admin-form .btn-success:hover {
+    border-color: aqua;
+}
+
+.admin-form .success-form {
+    color: aqua;
+    font-weight: bold;
+}
+
+.admin-form .error-form {
+    color: red;
+    font-weight: bold;
+}
+
+/*search and subscribe*/
+.search-error {
+    width: 70%;
+    color: red;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 30px;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.archieve-paginator {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.archieve-paginator a {
+    margin: 0px 5px;
+    font-weight: bold;
+}
+
+.archieve-paginator .current-page-link {
+    color: red;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+
+
+
+
