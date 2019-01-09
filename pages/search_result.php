@@ -1,24 +1,4 @@
 <?php
-    session_start();
-
-    //logout button
-    if ( isset($_POST['logout']) ) {
-        unset($_SESSION['logged_user']);
-
-        // remove all session variables
-        session_unset();
-
-        // destroy the session
-        session_destroy();
-    }
-
-    // check if we have reduction possibility
-    if ( $_SESSION['logged_user'] ) {
-        $reduct_bool = true;
-    } else {
-        $reduct_bool = false;
-    }
-
     //connect functions for work with database and main functions
     $address_connect = $_SERVER['DOCUMENT_ROOT'].'/functions/db_create_use.php';
     require_once "$address_connect";
@@ -63,19 +43,6 @@
             </div>
 
             <div class="col-md-8 col-lg-9 col-xl-7 pb-4">
-                <?php if ( $reduct_bool === true ): ?>
-                    <div class="logout-btn row justify-content-center mb-4">
-                        <span class="mr-4 text-center">
-                            Welcome to Our Football News, <?=ucfirst($_SESSION['logged_user']);?> !
-                        </span>
-
-                        <form action="<?=$_SERVER['PHP_SELF'];?>" method="post" role="form">
-                            <button type="submit" id="logout" name="logout" class="btn-sm btn-success">
-                                logout
-                            </button>
-                        </form>
-                    </div>
-                <?php endif; ?>
 
                 <?php
                     //connect SearchItem class
